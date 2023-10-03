@@ -36,6 +36,11 @@ export const Links = [
         Text:'Blogs',
         path:'/blogs'
     },
+    {
+        id:6,
+        Text:'Education',
+        path:'/education'
+    },
     
 ]
 
@@ -64,4 +69,31 @@ export const portfolioData = [
         category:'HTML',
         img:'https://images.unsplash.com/photo-1545665277-5937489579f2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cG9ydGZvbGlvfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60'
     },
+    
+]
+
+export const EducationData = [
+    {
+        id:generateRandomId(),
+        title:'White House English School Matric',
+        Degree:'Matric',
+        Year:'2005 - 2018',
+        description:'Learning a Modern Technology'
+    },
+    {
+        id:generateRandomId(),
+        title:'Punjab group of Colleges',
+        Degree:'Intermediate',
+        Year:'2018 -2020',
+        description:'Learning a Modern Technology'
+    },
+    {
+        id:generateRandomId(),
+        title:'University of Karachi',
+        Degree:'BSE Computer Science',
+        Year:'2021 - till',
+        description:'Learning a Modern Technology'
+    },
+    
+
 ]

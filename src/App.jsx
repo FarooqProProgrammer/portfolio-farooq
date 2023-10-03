@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Sidebar from './components/Sidebar'
 import Portfolio from './pages/Portfolio'
+import Education from './pages/Education'
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
             <Route path='/' Component={Home} />
             <Route path='/about' Component={About} />
             <Route path='/portfolio' Component={Portfolio} />
+            <Route path='/education' Component={Education} />
           </Routes>
       
       </Flex>

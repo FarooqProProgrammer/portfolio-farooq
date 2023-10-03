@@ -6,3 +6,13 @@
 * {
   font-family: 'Martian Mono', monospace;
 }
+
+.portfolio-card {
+  transition: transform 0.5s ease;
+}
+.portfolio-card.clicked {
+  transform: translateX(10);
+}
+.vertical-timeline-element-content-arrow {
+  width: 50px !important;
+}
