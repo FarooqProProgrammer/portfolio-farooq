@@ -1,39 +1,79 @@
-import React from 'react'
-import {RiMailLine } from '@remixicon/react'
+import { useForm, Controller } from 'react-hook-form';
+import { useRef } from 'react';
+import { addDoc, collection } from 'firebase/firestore';
+import { db } from '../../../config/db';
 
 const ContactForm = () => {
+    const { handleSubmit, control, formState: { errors } } = useForm();
+    const form = useRef();
+
+    const onSubmit = async (data) => {
+        console.log(data);
+        const docRef = await addDoc(collection(db, "information"), {
+           email:data.email,
+           name:data.name,
+           message:data.message,
+        });
+
+        console.log("Document written with ID: ", docRef.id);
+
+
+    };
+
     return (
         <div className="col-lg-8">
             <div className="contact-form contact-form-area wow fadeInUp delay-0-4s">
-                <form id="contactForm" className="contactForm" name="contactForm" action="assets/php/form-process.php" method="post">
+                <form ref={form} onSubmit={handleSubmit(onSubmit)} id="contactForm" className="contactForm" name="contactForm" action="assets/php/form-process.php" method="post">
                     <div className="row">
                         <div className="col-md-6">
                             <div className="form-group">
                                 <label htmlFor="name">Full Name</label>
-                                <input type="text" id="name" name="name" className="form-control" defaultValue="" placeholder="Steve Milner" required="" data-error="Please enter your Name" />
-                                <label htmlFor="name" className="for-icon"><i className="far fa-user"></i></label>
-                                <div className="help-block with-errors"></div>
+                                <Controller
+                                    name="name"
+                                    control={control}
+                                    defaultValue=""
+                                    render={({ field }) => (
+                                        <input {...field} type="text" className="form-control" placeholder="Steve Milner" />
+                                    )}
+                                    rules={{ required: 'Please enter your Name' }}
+                                />
+                                {errors.name && <span className="text-danger">{errors.name.message}</span>}
                             </div>
                         </div>
                         <div className="col-md-6">
                             <div className="form-group">
                                 <label htmlFor="email">Email Address</label>
-                                <input type="email" id="email" name="email" className="form-control" defaultValue="" placeholder="hello@websitename.com" required="" data-error="Please enter your Email" />
-                                <label htmlFor="email" className="for-icon"><i className="far fa-envelope"></i></label>
-                                <div className="help-block with-errors"></div>
+                                <Controller
+                                    name="email"
+                                    control={control}
+                                    defaultValue=""
+                                    render={({ field }) => (
+                                        <input {...field} type="email" className="form-control" placeholder="hello@websitename.com" />
+                                    )}
+                                    rules={{ required: 'Please enter your Email' }}
+                                />
+                                {errors.email && <span className="text-danger">{errors.email.message}</span>}
                             </div>
                         </div>
                         <div className="col-md-12">
                             <div className="form-group">
                                 <label htmlFor="message">Your Message</label>
-                                <textarea name="message" id="message" className="form-control" rows="4" placeholder="Write Your message" required="" data-error="Please Write your Message"></textarea>
-                                <div className="help-block with-errors"></div>
+                                <Controller
+                                    name="message"
+                                    control={control}
+                                    defaultValue=""
+                                    render={({ field }) => (
+                                        <textarea {...field} className="form-control" rows="4" placeholder="Write Your message"></textarea>
+                                    )}
+                                    rules={{ required: 'Please Write your Message' }}
+                                />
+                                {errors.message && <span className="text-danger">{errors.message.message}</span>}
                             </div>
                         </div>
                         <div className="col-md-12">
                             <div className="form-group mb-0">
                                 <button type="submit" className="theme-btn">
-                                    Send Me Message <i><RiMailLine size={16}/></i>
+                                    Send Me Message
                                 </button>
                                 <div id="msgSubmit" className="hidden"></div>
                             </div>
@@ -42,7 +82,7 @@ const ContactForm = () => {
                 </form>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default ContactForm
+export default ContactForm;
