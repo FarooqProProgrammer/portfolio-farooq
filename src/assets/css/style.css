@@ -1307,6 +1307,7 @@ html {
 
 .about-image-part img{
     border-radius: 10px;
+    height:400px;
 }
 
 .about-image-part h2 {

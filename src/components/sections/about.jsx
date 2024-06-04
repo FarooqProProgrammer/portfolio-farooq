@@ -2,6 +2,9 @@ import React from 'react'
 import { RiArrowRightUpLine, RiDownloadLine, RiFacebookCircleFill, RiTwitterXLine, RiLinkedinFill, RiGithubLine } from '@remixicon/react'
 import profile_img from "../../assets/images/about/profile.jpg"
 import SlideUp from '../animations/slideUp'
+import profileImage from "../../assets/images/user.jpeg"
+
+
 const About = () => {
     return (
         <section id="about" className="about-area">
@@ -11,7 +14,7 @@ const About = () => {
                     <div className="col-lg-5">
                         <SlideUp>
                             <div className="about-image-part">
-                                <img src={profile_img} alt="About Me" />
+                                <img src={profileImage} alt="About Me" />
                                 <h2>Muhammad Farooq</h2>
                                 <div className="about-btn btn-one text-center">
                                     <h6>Available for Work</h6>
