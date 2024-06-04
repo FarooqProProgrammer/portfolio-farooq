@@ -12,6 +12,7 @@
   "dependencies": {
     "@babel/runtime": "^7.24.6",
     "@emailjs/browser": "^4.3.3",
+    "@fancyapps/ui": "^5.0.36",
     "@react-spring/web": "^9.7.3",
     "@remixicon/react": "^4.2.0",
     "bootstrap": "^5.3.3",
