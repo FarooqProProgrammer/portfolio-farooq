@@ -8,6 +8,7 @@ import Work1 from "../../assets/images/Works/work-1.png"
 import Work2 from "../../assets/images/Works/work-2.png"
 import Work3 from "../../assets/images/Works/work-3.png"
 import Work4 from "../../assets/images/Works/work-4.png"
+import Work5 from "../../assets/images/projects/work5.png"
 
 export const projectsData = [
     {
@@ -37,6 +38,11 @@ export const projectsData = [
         category: "Wordpress",
         title: "FrontEnd Support",
     },
-   
+    {
+        id: 5,
+        src: Work5,
+        category: "Front End",
+        title: "Agency Website",
+    },
 
 ]
