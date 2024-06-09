@@ -60,7 +60,7 @@ const Portfolio = () => {
                     {filteredCategory.map((item, id) => <li key={id} onClick={() => handleCategoryClick(item)} className={item === category ? "current" : ""}>{item}</li>)}
                 </ul>
                 <div className="row project-masonry-active">
-                    {filteredProjects.map(({category, id, src, title})=><Card key={id} category={category} title={title} src={src} animationClass={animationClass} openLightbox={openLightbox}/>)}
+                    {filteredProjects.map(({category, id,url, src, title})=><Card key={id} category={category} url={url} title={title} src={src} animationClass={animationClass} openLightbox={openLightbox}/>)}
                 </div>
             </div>
             <Lightbox selectedImage={selectedImage} onClose={closeLightbox} />
@@ -71,7 +71,7 @@ const Portfolio = () => {
 export default Portfolio;
 
 
-const Card = ({category, title, src, animationClass, openLightbox}) => {
+const Card = ({category, title, src, animationClass, openLightbox,url}) => {
     return (
         <div className={`col-lg-4 col-md-6 item branding ${animationClass}`}>
             <div className="project-item style-two wow fadeInUp delay-0-2s">
@@ -82,6 +82,8 @@ const Card = ({category, title, src, animationClass, openLightbox}) => {
                 <div className="project-content">
                     <span className="sub-title">{category}</span>
                     <h3>{title}</h3>
+                    {/* <p>{url}</p> */}
+                    <a href={url} target="_blank">View Project</a>
                 </div>
             </div>
         </div>

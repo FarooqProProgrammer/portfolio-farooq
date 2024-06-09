@@ -15,18 +15,21 @@ export const projectsData = [
         src: Work1,
         category: "Backend",
         title: "Print On Demand",
+        url:'https://merchbazar-4ade74581c10.herokuapp.com/'
     },
     {
         id: 2,
         src: Work2,
         category: "Front End",
         title: "Car App Simple Design",
+        url:'https://gentle-semolina-14cff1.netlify.app/'
     },
     {
         id: 3,
         src: Work3,
         category: "Front End",
         title: "LMS WEBSITE",
+        url:"https://warm-tanuki-0a0987.netlify.app/"
     },
     {
         id: 4,
