@@ -9,7 +9,7 @@ export const workExperience = [
         id: 2,
         years: "2024 - 2024",
         institute: "Fossphorus",
-        position: "FrontEnd Inter"
+        position: "FrontEnd Intern"
     },
 
 ]

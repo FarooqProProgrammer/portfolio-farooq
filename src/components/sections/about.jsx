@@ -22,10 +22,10 @@ const About = () => {
                                 </div>
                                 <div className="about-social text-center">
                                     <ul>
-                                        <li><a href=""><i><RiFacebookCircleFill size={20} /></i></a></li>
-                                        <li><a href=""><i><RiTwitterXLine size={20} /></i></a></li>
-                                        <li><a href=""><i><RiLinkedinFill size={20} /></i></a></li>
-                                        <li><a href=""><i><RiGithubLine size={20} /></i></a></li>
+                                        {/* <li><a href=""><i><RiFacebookCircleFill size={20} /></i></a></li> */}
+                                        {/* <li><a href=""><i><RiTwitterXLine size={20} /></i></a></li> */}
+                                        <li><a target='_blank' href="https://www.linkedin.com/in/farooq-ayub-9177b7242/"><i><RiLinkedinFill size={20} /></i></a></li>
+                                        <li><a target='_blank' href="https://github.com/FarooqProProgrammer"><i><RiGithubLine size={20} /></i></a></li>
                                     </ul>
                                 </div>
                             </div>
