@@ -1,4 +1,4 @@
-import React from 'react'
+
 import UserImage from "../../assets/images/user.png"
 import styled from 'styled-components'
 import Header from '../Header'
