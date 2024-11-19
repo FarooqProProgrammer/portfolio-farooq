@@ -10,6 +10,7 @@ const Hero = () => {
                     <p className='text-white'>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, perspiciatis! Aut sed molestiae saepe voluptatum deleniti enim dolores hic, magnam ad culpa ea doloremque laborum autem explicabo eligendi consequatur? Perferendis!
                     </p>
+                    
                 </div>
             </div>
         </div>
