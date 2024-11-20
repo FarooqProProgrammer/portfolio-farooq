@@ -12,7 +12,7 @@ export default defineConfig({
       // cssInjectedByJsPlugin(),
     ],
   build: {
-    outDir: "build",
+   
     assetsDir: "assets",
     rollupOptions: {
       output: {
