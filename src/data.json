@@ -33,7 +33,7 @@
       "resumeCv": "/Resume.pdf"
     },
     "aboutRight": {
-      "aboutText": "Born in 2000, AB type living in USA. We provide on-screen design for websites and apps, as well as front-end implementation. We will continue to pursue a wide range of expressions and better code by pursuing our “likes”.",
+      "aboutText": "Born in 2000, AB type living in Pakistan. We specialize in full-stack development, offering both back-end and front-end solutions for websites and apps. Our goal is to continually explore diverse creative expressions and improve code quality by following our passions",
       "contactInfo": [
         {
           "icon": "phone",
@@ -67,23 +67,18 @@
     "resumeCv": "/Resume.pdf",
     "experience": [
       {
-        "start": "2020",
-        "end": "Present",
-        "title": "LEAD UI/UX DESIGNER",
+        "start": "2023/8 - 2024/2",
+        "end": "",
+        "title": "Intern (Front end Developer)",
         "subtitle": "UI/UX Lead"
       },
       {
-        "start": "2017",
-        "end": "2018",
-        "title": "SENIOR UI/UX DESIGNER",
-        "subtitle": "UI/UX Designer"
-      },
-      {
-        "start": "2015",
-        "end": "2017",
-        "title": "WEB DESIGN AND DEVELOPER",
-        "subtitle": "Jr. UI/UX Designer"
+        "start": "2024/2",
+        "end": "Present",
+        "title": "Associate Developer",
+        "subtitle": "Full Stack Developer"
       }
+     
     ]
   },
   "serviceData": [
